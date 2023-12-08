@@ -64,8 +64,8 @@ const Index = () => {
           autoPlay={isMobile ? true : false}
           infinite={false}
           itemClass="equal-height-row"
-          swipeable={false}
-          draggable={false}
+          swipeable={true}
+          draggable={true}
         >
           {cloudData.map((data, ind) => (
             <div className="cloud-card" key={ind}>
