@@ -14,7 +14,7 @@ const Index = () => {
   return (
     <HeaderBanner>
       <Container>
-        <Row className="w-100">
+        <Row className="w-100 column-reverse">
           <Col md={12 } lg={6}>
             <div className="left-section">
               <h1 className="section-heading">
@@ -24,7 +24,7 @@ const Index = () => {
                 Skilline is an interesting platform that will teach you in more an interactive way
               </p>
               <div className="btn-wrapper d-flex align-items-center">
-                <Button padding={'23px 40px'} text="Join for free" variant="primary" />
+                <Button padding={'23px 24px'} text="Join for free" variant="primary" />
                 <div className="play-box d-flex align-items-center">
                   <img className="mt-4 pointer" width="140px" height="140px" src={PlayButton} alt="no-play" />
                   <span> Watch how it works</span>

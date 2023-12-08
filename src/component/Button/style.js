@@ -6,6 +6,11 @@ const ButtonWrapper = styled(Button)`
   min-width: 160px;
   padding: ${(props) => (props.padding ? `${props.padding}` : '12px')};
   font-size: ${(props) => (props.fontSize ? `${props.fontSize}` : '24px')};
+  @media (max-width: 575px) {
+    font-size:12px;
+    padding:8px;
+    min-width:auto
+  }
   &.btn-secondary {
     background-color: ${({ theme }) => theme.colors.whiteColor};
     color: ${({ theme }) => theme.colors.bodyLight};
