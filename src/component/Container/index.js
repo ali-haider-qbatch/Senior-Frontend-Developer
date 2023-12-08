@@ -7,9 +7,13 @@ const Container = styled.span`
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0 102px;
+  align-items:center ;
 
   ${media.lg`
   padding: 0 80px;
+  `}
+  ${media.xl`
+  padding: 0 20px;
   `}
 
   ${media.md`

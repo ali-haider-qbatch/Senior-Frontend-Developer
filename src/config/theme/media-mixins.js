@@ -5,6 +5,7 @@ import { css } from "styled-components";
    sm: "767px",
    md: "991px",
    lg: "1199px",
+   xl: "1362px",
  };
 
 export const media = Object.keys(breakpoints).reduce((accumulator, label) => {
@@ -15,9 +16,3 @@ export const media = Object.keys(breakpoints).reduce((accumulator, label) => {
   `;
   return accumulator;
 }, {});
-
-export const bgMixin = (color) => css`
-  &:hover {
-    background-color: ${color};
-  }
-`;

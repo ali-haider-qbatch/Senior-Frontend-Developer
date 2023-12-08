@@ -2,6 +2,9 @@ import styled from 'styled-components'
 const HeaderBanner = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundColor};
   padding-top: 135px;
+  @media (max-width:991px){
+    padding-top:24px;
+  }
   position: relative;
 
   .left-section {
@@ -10,6 +13,10 @@ const HeaderBanner = styled.div`
       font-size: 54px;
       color: ${({ theme }) => theme.colors.bodyTextVariant};
       line-height: 79px;
+      @media (max-width:768px){
+        font-size: 32px;
+        line-height: 42px;
+      }
       span {
         color: ${({ theme }) => theme.colors.primaryColor};
       }
@@ -21,6 +28,18 @@ const HeaderBanner = styled.div`
       max-width: 597px;
       font-family: 'Nunito Sans', sans-serif;
       line-height: 36px;
+      @media (max-width:1143px){
+        padding-right: 97px;
+        @media (max-width:768px){
+          margin-top: 24px;
+      }
+      }
+  
+    }
+    .btn-wrapper{
+      @media (max-width:1316px){
+        flex-wrap:wrap ;
+      }
     }
     .play-box {
       font-size: ${({ theme }) => theme.fonts.baseFontSizeLg};
@@ -35,21 +54,27 @@ const HeaderBanner = styled.div`
     margin-top: -212px;
     margin-left: 28px;
     position: relative;
+    @media (max-width:991px){
+      margin-top:0px ;
+    }
     .assisted-student {
       background: rgba(255, 255, 255, 0.8);
       border-radius: 20px;
       position: absolute;
       top: 172px;
       padding: 24px;
-      animation: moveUpDown 5s ease-in-out infinite alternate;
-      @keyframes moveUpDown {
-        0% {
-          top: 168px;
-        }
-        100% {
-          top: 175px;
-        }
+      animation: moveUpAndDown 3s infinite alternate;
+      @media (max-width:1315px){
+        left:-60px;
       }
+      @keyframes moveUpAndDown {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(80px);
+          }
+        }
       .text {
         span:first-child {
           font-size: 24px;
@@ -67,29 +92,36 @@ const HeaderBanner = styled.div`
       position: absolute;
       top: 500px;
       padding: 24px;
-      animation: moveUpDowns 5s ease-in-out infinite alternate;
-      @keyframes moveUpDowns {
-        0% {
-          top: 495px;
-        }
-        100% {
-          top: 510px;
-        }
+      animation: moveUpAndDown 2s infinite alternate;
+
+      /* @media (max-width:1315px){
+        left:-60px;
+        @media (max-width:1078px){
+         left:-152px;
+      } */
       }
+      @keyframes moveUpAndDown {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(80px);
+          }
+        }
     }
     .graph {
       position: absolute;
       top: 172px;
       right: 80px;
       padding: 24px;
-      animation: moveUpDown 5s ease-in-out infinite alternate;
-      @keyframes moveUpDown {
-        0% {
-          top: 170px;
-        }
-        100% {
-          top: 180px;
-        }
+      animation: moveUpAndDown 2s infinite alternate;
+      @keyframes moveUpAndDown {
+          0% {
+            transform: translateY(0);
+          }
+          100% {
+            transform: translateY(60px);
+          }
       }
     }
     .admission {
@@ -97,8 +129,11 @@ const HeaderBanner = styled.div`
       border-radius: 20px;
       position: absolute;
       right: 19px;
-      top: 500px;
+      top: 394px;
       padding: 24px;
+      @media (max-width:1591px){
+        right: -39px;
+      }
       .check-icon {
         position: absolute;
         right: 40px;
@@ -115,7 +150,6 @@ const HeaderBanner = styled.div`
       align-items: center;
       justify-content: center;
     }
-  }
   .bootom-svg {
     svg {
       position: absolute;
