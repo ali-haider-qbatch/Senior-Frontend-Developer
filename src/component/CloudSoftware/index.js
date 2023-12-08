@@ -61,7 +61,7 @@ const Index = () => {
         <Carousel
           responsive={responsive}
           arrows={false}
-          autoPlay={false}
+          autoPlay={isMobile ? true : false}
           infinite={false}
           itemClass="equal-height-row"
           swipeable={false}

@@ -58,8 +58,7 @@ const companyLogo = [
   },
 ];
 
-const index = () => {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
+const Index = () => {
   const isMobile = useMediaQuery({ maxWidth: 768 })
   return (
     <CompanyWrapper>
@@ -88,4 +87,4 @@ const index = () => {
   )
 };
 
-export default index;
+export default Index
