@@ -97,7 +97,7 @@ const TestimnialsWrapper = styled.div`
     }
   }
   .review-card {
-    box-shadow: 2px 4px 60px 0px #292C7C1A;
+    box-shadow: 2px 4px 10px 0px #292C7C1A;
     background-color: #fff;
     padding: 41px 59px 29px 82px;
     border-left: 14px solid #F67766;
@@ -154,9 +154,9 @@ const TestimnialsWrapper = styled.div`
   }
   .react-multiple-carousel__arrow {
     background-color: #fff;
-    box-shadow: 0px 4px 34px 0px #292C7C26;
+    box-shadow: 0px 4px 10px 0px #292C7C26;
     &.react-multiple-carousel__arrow--right {
-      right: calc(0% + 1px);
+      right: calc(2% + 1px);
     }
     &.react-multiple-carousel__arrow--left {
       left: calc(0% + 1px);

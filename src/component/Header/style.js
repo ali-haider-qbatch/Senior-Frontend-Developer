@@ -2,7 +2,7 @@ import styled from 'styled-components'
 const HeadWrapper = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundColor};
   .navbar {
-    padding: 24px 0;
+    padding: 12px 0;
     @media (max-width: 991px) {
       padding: 24px 0px;
     }

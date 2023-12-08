@@ -2,6 +2,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { useMediaQuery } from 'react-responsive'
 
 import fileInvoice from "../../assets/file-invoice.svg";
 import calendarCircle from "../../assets/calander-circle.svg";
@@ -42,7 +43,9 @@ const cloudData = [
   },
 ];
 
-const index = () => {
+const Index = () => {
+
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   return (
     <CloudWrapper>
       <Container>
@@ -51,18 +54,18 @@ const index = () => {
             All-In-One <span>Cloud Software.</span>
           </h1>
           <p>
-            Skilline is one powerful online software suite that combines all the
-            tools needed to run a successful school or office.
+            Skilline is one powerful online software suite that combines all the tools needed to run a successful school
+            or office.
           </p>
         </div>
         <Carousel
           responsive={responsive}
           arrows={false}
-          autoPlay={true}
-          infinite={true}
+          autoPlay={false}
+          infinite={false}
           itemClass="equal-height-row"
-          swipeable={true}
-          draggable={true}
+          swipeable={false}
+          draggable={false}
         >
           {cloudData.map((data, ind) => (
             <div className="cloud-card" key={ind}>
@@ -76,7 +79,7 @@ const index = () => {
         </Carousel>
       </Container>
     </CloudWrapper>
-  );
+  )
 };
 
-export default index;
+export default Index;

@@ -2,6 +2,8 @@ import React from "react";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Container } from "react-bootstrap";
+import { useMediaQuery } from 'react-responsive'
+
 
 import googleLogo from "../../assets/google-logo.svg";
 import netflixLogo from "../../assets/netflix-logo.svg";
@@ -31,7 +33,7 @@ const responsive = {
   },
   smallScreen: {
     breakpoint: { max: 500, min: 0 },
-    items: 1,
+    items: 2,
   },
 };
 
@@ -57,6 +59,8 @@ const companyLogo = [
 ];
 
 const index = () => {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const isMobile = useMediaQuery({ maxWidth: 768 })
   return (
     <CompanyWrapper>
       <Container>
@@ -66,9 +70,10 @@ const index = () => {
         <Carousel
           responsive={responsive}
           arrows={false}
-          autoPlay={true}
           infinite={true}
           slidesToSlide={2}
+          deviceType="mobile"
+          autoPlay={isMobile  ? true : false}
           swipeable={true}
           draggable={true}
         >
@@ -80,7 +85,7 @@ const index = () => {
         </Carousel>
       </Container>
     </CompanyWrapper>
-  );
+  )
 };
 
 export default index;

@@ -50,7 +50,7 @@ const CloudWrapper = styled.div`
 
   .cloud-card {
     border-radius: 20px;
-    box-shadow: 0px 10px 60px 0px #262d7614;
+    box-shadow: 0px 10px 40px 0px #262d7614;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,7 +59,7 @@ const CloudWrapper = styled.div`
     padding: 54px 32px 50px;
     height: auto;
     min-height: 380px;
-    margin: 120px 14px 0;
+    margin: 120px 20px 0;
     ${media.xs`
       padding: 54px 24px 50px;
       `}

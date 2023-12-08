@@ -73,7 +73,7 @@ const Index = () => {
             </div>
           </Col>
           <Col lg={7}>
-            <Carousel responsive={responsive}>
+            <Carousel responsive={responsive} >
               {testimonialData.map((item, ind) => (
                 <div key={ind}>
                   <img src={item.img} alt="testimonial" width="560px" />
