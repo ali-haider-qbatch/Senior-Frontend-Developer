@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 const HeaderBanner = styled.div`
   background-color: ${({ theme }) => theme.colors.backgroundColor};
-  padding-top: 135px;
+  padding-top: 250px;
   @media (max-width: 991px) {
     padding-top: 24px;
   }
