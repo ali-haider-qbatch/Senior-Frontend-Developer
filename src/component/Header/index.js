@@ -9,18 +9,20 @@ function BasicExample() {
   const [top, setTop] = useState(true)
   useEffect(() => {
     const scrollHandler = () => {
-      window.scrollY > 10 ? setTop(false) : setTop(true)
+      if(window.innerWidth > 1199){
+          window.scrollY > 50 ? setTop(false) : setTop(true)
+      }
+     
     }
     window.addEventListener('scroll', scrollHandler)
     return () => window.removeEventListener('scroll', scrollHandler)
   }, [top])
-
   return (
     <HeadWrapper>
       <Navbar
         header
         expand="xl"
-        className={`fixed-top ${!top && `bg-white shadow-lg`}`}
+        className={`fixed-top ${!top && `fixed-bg shadow-lg`}`}
       >
         <Container>
           <Navbar.Brand href="#home">

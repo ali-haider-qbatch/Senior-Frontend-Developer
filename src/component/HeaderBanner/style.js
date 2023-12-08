@@ -58,7 +58,7 @@ const HeaderBanner = styled.div`
     margin-left: 28px;
     position: relative;
     @media (max-width: 991px) {
-      margin-top: 0px;
+      margin-top: 143px;
     }
     .assisted-student {
       background: rgba(255, 255, 255, 0.8);
