@@ -6,9 +6,9 @@ import GlobalStyles from "./config/theme/global.styled";
 
 import Header from "./component/Header";
 import HeaderBanner from "./component/HeaderBanner";
-import TrustedCompanies from "./components/TrustedCompanies";
-import CloudSoftware from "./components/CloudSoftware";
-import Testimonials from "./components/Testimonials";
+import TrustedCompanies from "./component/TrustedCompanies";
+import CloudSoftware from "./component/CloudSoftware";
+import Testimonials from "./component/Testimonials";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
