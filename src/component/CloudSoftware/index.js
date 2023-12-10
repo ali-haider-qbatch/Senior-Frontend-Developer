@@ -62,7 +62,7 @@ const Index = () => {
           responsive={responsive}
           arrows={false}
           autoPlay={isMobile ? true : false}
-          infinite={false}
+          infinite={true}
           itemClass="equal-height-row"
           swipeable={true}
           draggable={true}

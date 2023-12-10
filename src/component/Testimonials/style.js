@@ -97,23 +97,25 @@ const TestimnialsWrapper = styled.div`
     }
   }
   .review-card {
-    box-shadow: 2px 4px 10px 0px #292C7C1A;
+    box-shadow: 2px 4px 10px 0px #292c7c1a;
     background-color: #fff;
     padding: 41px 59px 29px 82px;
-    border-left: 14px solid #F67766;
+    border-left: 14px solid #f67766;
     border-radius: 20px;
     margin-left: 68px;
     margin-top: -180px;
     position: relative;
     ${media.sm`
-     margin-left: 0;
+       margin-left: 0;
       margin-top: -120px;
+      padding:19px 20px 20px 6px;
+      border-left:0px;
     `}
     p {
       font-size: 22px;
       line-height: 40px;
       letter-spacing: 0.7px;
-      color: #5F5F7E;
+      color: #5f5f7e;
       position: relative;
       margin-bottom: 32px;
       ${media.sm`
@@ -121,12 +123,12 @@ const TestimnialsWrapper = styled.div`
         line-height: 28px;
       `}
       &::before {
-        content: "";
+        content: '';
         position: absolute;
         left: -32px;
         width: 1px;
         height: 90%;
-        background-color: #BDBDD1;
+        background-color: #bdbdd1;
         margin-top: 12px;
       }
     }
@@ -134,13 +136,13 @@ const TestimnialsWrapper = styled.div`
       h2 {
         font-size: 24px;
         font-weight: 600;
-        color: #5F5F7E;
+        color: #5f5f7e;
         ${media.sm`
           font-size: 18px;
         `}
       }
       span {
-        color: #80819A;
+        color: #80819a;
         font-size: 18px;
         font-weight: 600;
         letter-spacing: 0.7px;
@@ -154,7 +156,7 @@ const TestimnialsWrapper = styled.div`
   }
   .react-multiple-carousel__arrow {
     background-color: #fff;
-    box-shadow: 0px 4px 10px 0px #292C7C26;
+    box-shadow: 0px 4px 10px 0px #292c7c26;
     &.react-multiple-carousel__arrow--right {
       right: calc(2% + 1px);
     }
@@ -162,9 +164,9 @@ const TestimnialsWrapper = styled.div`
       left: calc(0% + 1px);
     }
     &::before {
-      color: #1EA4CE;
+      color: #1ea4ce;
     }
   }
-`;
+`
 
 export default TestimnialsWrapper;
